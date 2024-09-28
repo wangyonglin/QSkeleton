@@ -1,0 +1,12 @@
+#ifndef LIBQEXAMPLE_GLOBAL_H
+#define LIBQEXAMPLE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LIBQEXAMPLE_LIBRARY)
+#define LIBQEXAMPLE_EXPORT Q_DECL_EXPORT
+#else
+#define LIBQEXAMPLE_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LIBQEXAMPLE_GLOBAL_H
